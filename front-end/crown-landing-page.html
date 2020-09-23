@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Crown Landing Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./crown-landing-page.css">
+    </head>
+    <body>
+
+        <!-- Branding (name, logo, etc; stays on screen even when scrolling down.) -->
+
+        <nav class="navbar">
+            <span class="navbar-brand mb-0 h1" id="brandName">Crown</span>
+        </nav>
+
+        <div class="container">
+
+            <!-- Slogan -->
+
+            <div class="row">
+                <h2 id="slogan">Download Crown today!</h2>
+            </div>
+
+            <hr>
+
+            <!-- Description -->
+
+            <div class="row" id="description">
+                <p>Here we can put a cool description of what Crown does. Social media application. At this point, I'm typing just to lengthen the paragraph and make it into a lengthy paragraph. Doo bee doo bop. My internet just stopped working. That's cool I guess.</p>
+            </div>
+
+            <hr>
+
+            <!-- Showcase (loops through screenshots of the app) -->
+
+            <div class="row" id="showcase">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!--<img src="../assets/pathToScreenshot1 alt="screenshot 1">-->
+                        </div>
+                        <div class="carousel-item">
+                            <!--<img src="../assets/pathToScreenshot2 alt="screenshot 2">-->
+                        </div>
+                        <div class="carousel-item">
+
+                            <!--<img src="../assets/pathToScreenshot3 alt="screenshot 3">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Downloads -->
+            
+            <div class="row" id="downloads">
+
+                <!-- Download ios -->
+
+                <div class="col-md">
+                    <a class="downloadLink" href="https://duckduckgo.com"><h5>Download for IOS</h5></a>
+                </div>
+
+                <!-- Download android -->
+
+                <div class="col-md">
+                    <a class="downloadLink" href="https://duckduckgo.com"><h5>Download for Android</h5></a>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Reviews (loops through list of reviews) -->
+
+            <div class="row" id="reviews">
+                <div class="col-md">
+                    <h5>Reviews</h5>
+            
+                    <div class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <p>"I really like Crown." - anon</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"Crown is cool." - realperson5</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"I made friends on Crown." - notalonelyboi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Outreach -->
+
+            <div class="row" id="outreach">
+
+            <!-- Leave a review  (form - collapsable; allows users to add a review to reviews) -->
+
+                <div class="col-md" id="leaveReview">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#reviewForm" role="button">Leave a Review</a>
+            
+                    <form class="collapse" id="reviewForm">
+                        <div class="form-group">
+                            <label for="inputName-r">Name</label>
+                            <input class=form-control" id="inputName-r" placeholder="Name">
+                            <small id="nameHelp" class="form-text text-muted">This will be displayed with your review.</small> 
+                        </div>
+                        <div class="form-group">
+                            <label for="inputReview">Review</label>
+                            <textarea id="inputReview" class="form-control"></textarea>
+                        </div>
+                        <button id="submit-r"type="submit" class="btn btn-primary" data-toggle="collapse" href="#reviewForm">Submit</button>
+                    </form>
+                </div>
+
+            <!-- Subscribe to newsletter (form - collapsable; allows users to sybmit their email -->
+
+                <div class="col-md" id="newsletter">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#newsletterForm" role="button">Subscribe to our newsletter</a>
+
+                    <form class="collapse" id="newsletterForm">
+                        <div class="form-group">
+                            <label for="inputName-nl">Name</label>
+                            <input class="form-control" id="inputName-nl" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input class="form-control" id="inputEmail" placeholder="example@mail.com">
+                        </div>
+                        <button id="submit-nl" type="submit" class="btn btn-primary" data-toggle="collapse" href="#newsletterForm">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr>
+
+        <!-- Contact Us -->
+
+            <div class="row" id="contact">
+            <div class="col-md">
+                    <div class="row"><h5>Contact Us</h5></div>
+                    <div class="row"><small>Xavier Austin</small></div>
+                    <div class="row"><small>1640 Main St. NYC, NC 37294</small></div>
+                    <div class="row"><small>myemail@gmail.com</small></div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

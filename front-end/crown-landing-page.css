@@ -1,0 +1,104 @@
+:root {
+    --gold: #d4af37;
+    --purple: #7851a9;
+}
+
+body {
+    color: white;
+    background-color: #000316;
+}
+
+p {
+    text-align: center;
+}
+
+hr {
+    background-color: var(--purple);
+}
+
+
+.navbar {
+    background-color: var(--gold);
+    margin: 0px 0px 30px 0px;
+}
+
+.container {
+    text-align: center;
+    min-width: 350px;
+    width: 700px;
+    background-color: var(--gold);
+    border: 1px solid var(--gold); 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.row {
+    /*background-color: var(--gold);*/
+}
+
+.downloadLink {
+    color: white;
+}
+
+.downloadLink:hover {
+    color: black;
+}
+
+.btn {
+    width: 300px;
+    background-color: var(--purple);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#brandName {
+    font-size: 30px;
+}
+
+#slogan {
+    font-size: 25px;
+    min-width: 200px;
+    width: 300px;
+    margin: 20px 200px 20px;
+}
+
+#description {
+    margin: 20px 150px 20px;
+}
+
+#showcase {
+    margin: 20px 150px 20px;
+}
+
+#downloads {
+    margin: 20px 150px 20px;
+}
+
+#reviews {
+    margin: 20px 150px 20px;
+}
+
+/*
+#outreach {}
+
+#reviewForm {}
+
+#inputName-r {}
+
+#inputReview {}
+
+#submit-r {}
+
+#newsletter {}
+
+#inputName-nl {}
+
+#input-email {}
+
+#submit-nl {}
+
+#contact {}
+*/
