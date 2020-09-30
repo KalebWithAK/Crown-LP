@@ -55,11 +55,11 @@ nav {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-.crown-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5em;
+#crown-img {
+    display: fixed;
+    left: 50%;
+    transform: translateX(-250%);
+    padding-top: 0.5em;
 }
 .copy-text {
     font-family: 'Roboto', sans-serif;
@@ -68,8 +68,14 @@ nav {
 #faq {
     padding-top: 25%;
 }
+#faq:hover {
+    color: var(--gold);
+}
 #contact {
     padding-top: 25%;
+}
+#contact:hover {
+    color: var(--gold);
 }
 .contact-links {
     display: flex;
@@ -81,6 +87,9 @@ nav {
 }
 #about {
     padding-top: 25%;
+}
+#about:hover {
+    color: var(--gold);
 }
 #about-text {
     margin: auto;
