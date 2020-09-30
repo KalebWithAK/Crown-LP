@@ -1,2 +1,2 @@
-# crown-landing-page
+# Crown-LP
 Landing page for the Crown app.

@@ -1,0 +1,137 @@
+:root {
+    --bg: #000316;
+    --gold: #FFD700
+}
+body {
+    color: white;
+    background-color: var(--bg);
+}
+main {
+    padding: 0em 2em;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+}
+.logo:hover {
+    color: var(--gold);
+    font-size: 4rem;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+.nav-link {
+    padding-right: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover {
+    color: var(--gold);
+    font-size: 2rem;
+}
+.big-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.med-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    width: 20%;
+    padding-top: 2em;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#crown-img {
+    display: fixed;
+    left: 50%;
+    transform: translateX(-250%);
+    padding-top: 0.5em;
+}
+.copy-text {
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+#faq {
+    padding-top: 25%;
+}
+#faq:hover {
+    color: var(--gold);
+}
+#contact {
+    padding-top: 25%;
+}
+#contact:hover {
+    color: var(--gold);
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+.contact-link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#about {
+    padding-top: 30%;
+}
+#about:hover {
+    color: var(--gold);
+}
+#about-text {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+footer {
+    position: absolute;
+    bottom: 0em;
+    padding-left: 2em;
+}
+.intro {
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: var(--gold);
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.slider {
+    background-color: #D4AF37;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide {
+    background: var(--bg);
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
