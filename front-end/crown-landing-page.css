@@ -1,104 +1,128 @@
 :root {
-    --gold: #d4af37;
-    --purple: #7851a9;
+    --bg: #000316;
+    --gold: #FFD700
 }
-
 body {
     color: white;
-    background-color: #000316;
+    background-color: var(--bg);
 }
-
-p {
-    text-align: center;
+main {
+    padding: 0em 2em;
 }
-
-hr {
-    background-color: var(--purple);
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-
-.navbar {
-    background-color: var(--gold);
-    margin: 0px 0px 30px 0px;
-}
-
-.container {
-    text-align: center;
-    min-width: 350px;
-    width: 700px;
-    background-color: var(--gold);
-    border: 1px solid var(--gold); 
-    border-radius: 10px 10px 10px 10px;
-}
-
-.row {
-    /*background-color: var(--gold);*/
-}
-
-.downloadLink {
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-decoration: none;
     color: white;
 }
-
-.downloadLink:hover {
-    color: black;
+.logo:hover {
+    color: var(--gold);
+    font-size: 4rem;
 }
-
-.btn {
-    width: 300px;
-    background-color: var(--purple);
+.nav-links {
+    list-style-type: none;
+    display: flex;
 }
-
-.btn:hover {
-    background-color: white;
-    color: black;
+.nav-link {
+    padding-right: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
 }
-
-
-#brandName {
-    font-size: 30px;
+.nav-link:hover {
+    color: var(--gold);
+    font-size: 2rem;
 }
-
-#slogan {
-    font-size: 25px;
-    min-width: 200px;
-    width: 300px;
-    margin: 20px 200px 20px;
+.big-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
-
-#description {
-    margin: 20px 150px 20px;
+.med-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    width: 20%;
+    padding-top: 2em;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
-
-#showcase {
-    margin: 20px 150px 20px;
+.crown-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
 }
-
-#downloads {
-    margin: 20px 150px 20px;
+.copy-text {
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
 }
-
-#reviews {
-    margin: 20px 150px 20px;
+#faq {
+    padding-top: 25%;
 }
-
-/*
-#outreach {}
-
-#reviewForm {}
-
-#inputName-r {}
-
-#inputReview {}
-
-#submit-r {}
-
-#newsletter {}
-
-#inputName-nl {}
-
-#input-email {}
-
-#submit-nl {}
-
-#contact {}
-*/
+#contact {
+    padding-top: 25%;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+.contact-link {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#about {
+    padding-top: 25%;
+}
+#about-text {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+footer {
+    position: absolute;
+    bottom: 0em;
+    padding-left: 2em;
+}
+.intro {
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color: var(--gold);
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.slider {
+    background-color: #D4AF37;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.hide {
+    background: var(--bg);
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
